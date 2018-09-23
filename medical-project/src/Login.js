@@ -39,13 +39,14 @@ class App extends Component {
 
     axios.post(apiBaseUrl + 'Login', payLoad,  {headers: { 'Access-Control-Allow-Origin': '*', 'Content-Type':'application/json'}}).then(function (response) {
       console.log(response);
-      if (response) {
+      if (response.status === 200) {
         console.log("Login successfull");
-      //  this.context.history.push('/userinfopage')
-      //  window.location = "/userinfopage"
+        alert("Login successfull")
        history.push('/userinfopage');
-      } else if (response.data.code === 204) {
+      } else if (response.status === 204) {
         console.log("Username password do not match");
+        alert("Your password is wrong")
+        history.push('/');
       }
     })
       .catch(function (error) {
