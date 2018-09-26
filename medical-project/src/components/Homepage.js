@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../baselayout/header';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 class Homepage extends Component {
   render() {
@@ -9,10 +9,25 @@ class Homepage extends Component {
          <Header
           />
         <ul className="Header_links">
-        <Link to={"Header_link"}>hiiii</Link>
-          <li className="Header_link">When</li>
-          <li className="Header_link">Why</li>
-          <li className="Header_link">About</li>
+        <br/><br/>
+        <Link to={"Header_link"}>Purchase</Link>
+        <br/><br/>
+        <Link to={"Header_link"}>Sale</Link>
+        <br/><br/>
+        <Link to={"Header_link"}>Stock</Link>
+        <br/><br/>
+        <Link to={"medicine"}>Medicine</Link>
+        <br/><br/> 
+        <Link to={"Header_link"}>Dealer</Link>
+        <br/><br/>
+        <Link to={"Header_link"}>Company</Link>
+        <br/><br/>
+        <Link to={"Header_link"}>Tab1</Link>
+        <br/><br/>
+        <Link to={"Header_link"}>Tab2</Link>
+        <br/><br/>
+        <Link to={"Header_link"}>Tab3</Link>
+        <br/><br/>
         </ul>
     </div>
      
