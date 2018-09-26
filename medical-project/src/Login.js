@@ -29,8 +29,6 @@ class App extends Component {
     let userName = this.state.username;
     let password = this.state.password;
 
-    
-
     let payLoad = {
       "userName": userName,
       "password": password,
@@ -42,7 +40,7 @@ class App extends Component {
       if (response.status === 200) {
         console.log("Login successfull");
         alert("Login successfull")
-       history.push('/userinfopage');
+       history.push('/homepage');
       } else if (response.status === 204) {
         console.log("Username password do not match");
         alert("Your password is wrong")
