@@ -25,6 +25,7 @@ class Medicine extends React.Component {
                 <div>
                     <TextField
                         id="standard-name"
+                        style={{marginLeft:'20px'}}
                         label="MedicineName"
                         placeholder="please enter medicine name"
                         value="sbdb"
